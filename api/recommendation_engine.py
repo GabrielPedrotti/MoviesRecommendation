@@ -58,7 +58,7 @@ class RecommendationEngine:
         self.tfidf = TfidfVectorizer(stop_words='english')
         self.tfidf_matrix = self.tfidf.fit_transform(self.merged_data['combined_features'])
 
-    def get_recommendations(self, title, top_n=10, min_rating=0, min_votes=0):
+    def get_recommendations(self, title="", top_n=10, min_rating=0, min_votes=0):
         query = title.lower()
 
         query_vec = self.tfidf.transform([query])
