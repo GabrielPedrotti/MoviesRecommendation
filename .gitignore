@@ -1,4 +1,5 @@
 ./node_modules
 .venv
 .ini
-dataset
+data
+__pycache__
