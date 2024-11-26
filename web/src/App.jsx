@@ -36,7 +36,7 @@ const App = () => {
         <h1>FakeAi Movies</h1>
       </header>
       <main>
-        <MovieList movies={getMoviesRecommendations()} />
+        <MovieList movies={getMoviesRecommendations(7,1000)} />
       </main>
     </div>
   );
