@@ -2,8 +2,11 @@
 
 from flask import Flask, request, jsonify
 from recommendation_engine import RecommendationEngine
+from flask_cors import CORS
 
 app = Flask(__name__)
+
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 # Inicializa o motor de recomendação
 engine = RecommendationEngine()
