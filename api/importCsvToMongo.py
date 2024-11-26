@@ -6,7 +6,7 @@ def mongoimport(tsv_path, coll_name):
     """Imports a TSV file to a MongoDB collection.
     Returns: count of the documents in the new collection.
     """
-    mongo_uri = "mongodb+srv://admin:I9qgUqjE3EuvWYn1@movies-cluster.aeyjp.mongodb.net/?retryWrites=true&w=majority&appName=movies-cluster"
+    mongo_uri = "mongodb+srv://admin:<password>@movies-cluster.aeyjp.mongodb.net/?retryWrites=true&w=majority&appName=movies-cluster"
     client = MongoClient(mongo_uri)
     db = client["data"]
     
