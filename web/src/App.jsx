@@ -1,6 +1,15 @@
 import React from "react";
 import MovieList from "./components/MovieList";
 import "./styles.css";
+import axios from "axios";
+
+const getMoviesRecommendations = async (minRating, minVotes) => {
+  const response = await axios.get(`http://localhost:5000/recommendations?min_rating=${minRating}&min_votes=${minVotes}`);
+
+  console.log('response', response.data);
+
+  return response.data;
+}
 
 const movies = [
   {
@@ -27,7 +36,7 @@ const App = () => {
         <h1>FakeAi Movies</h1>
       </header>
       <main>
-        <MovieList movies={movies} />
+        <MovieList movies={getMoviesRecommendations()} />
       </main>
     </div>
   );
