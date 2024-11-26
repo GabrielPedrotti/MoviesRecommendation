@@ -29,7 +29,7 @@ def get_recommendations():
     min_votes = request.args.get('min_votes', default=0, type=int)
 
     if not title:
-        return jsonify({'error': 'Parâmetro "title" é obrigatório.'}), 400
+        title = ""
 
     recommendations = engine.get_recommendations(title, top_n, min_rating, min_votes)
 
