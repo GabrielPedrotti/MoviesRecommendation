@@ -28,34 +28,45 @@ body {
   }
   
   .movie-card {
-    width: 200px;
-    position: relative;
-    transition: transform 0.3s ease-in-out;
-    cursor: pointer;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    margin: 16px;
   }
   
   .movie-card:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
   }
   
-  .movie-image {
+  .movie-poster {
     width: 100%;
-    border-radius: 10px;
+    height: 450px;
+    object-fit: cover;
   }
   
   .movie-info {
-    margin-top: 10px;
-    text-align: center;
+    padding: 16px;
   }
   
   .movie-title {
-    font-size: 1.2rem;
-    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 8px 0 4px;
+    display: flex;
+    justify-content: center;
+    color: black;
   }
   
   .movie-description {
-    font-size: 0.9rem;
-    color: #b3b3b3; 
+    font-size: 14px;
+    color: black;
+    display: flex;
+    justify-content: center;
   }
   
   @media (max-width: 768px) {
