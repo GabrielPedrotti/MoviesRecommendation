@@ -3,7 +3,6 @@
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import linear_kernel
-from fuzzywuzzy import process
 
 class RecommendationEngine:
     def __init__(self):
@@ -79,4 +78,16 @@ class RecommendationEngine:
                 if len(filtered_indices) >= top_n:
                     break
 
-        return self.merged_data['title'].iloc[filtered_indices].tolist()
+        recommendations = []
+        for idx in filtered_indices:
+            row = self.merged_data.iloc[idx]
+            recommendations.append({
+                "title": row['title'],
+                "titleId": row['titleId'],
+                "region": row['region'],
+                "types": row['types'],
+                "averageRating": row['averageRating'].item(),
+                "numVotes": row['numVotes'].item()
+            })
+
+        return recommendations
