@@ -1,6 +1,8 @@
 # Breve demonstração:
 
-![ScreenRecording2024-12-02190620-ezgif com-video-to-gif-converter (1)](https://github.com/user-attachments/assets/09d3810d-c2c3-4908-9e92-67fb2d3f5d2d)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/09d3810d-c2c3-4908-9e92-67fb2d3f5d2d" />
+</p>
 
 # Como executar o projeto localmente:
 
