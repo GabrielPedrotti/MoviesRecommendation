@@ -59,7 +59,7 @@ const App = () => {
   return (
     <div className="app">
       <header className="app-header">
-        <h1>FakeAi Movies</h1>
+        <h1>A.I Movies</h1>
       </header>
 
       <main>
