@@ -52,3 +52,5 @@ Após, ainda na pasta web, inicie o serviço com:
 ```
 npm start
 ```
+
+Obs: No arquivo App.jsx troque o valor de apikey pela sua chave real.
