@@ -1,3 +1,5 @@
+# Equipe: Alex Henrique, Gabriel Pedrotti e Marco Antonio
+
 # Breve demonstração:
 
 <p align="center">
